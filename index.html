@@ -12,19 +12,66 @@
       margin: 0;
       font-family: 'Prompt', sans-serif;
       color: white;
+      background: #202731;
+      overflow-x: hidden;
+    }
+    section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 400px;
+      padding: 100px 20vw;
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .pink {
+      background: pink;
+    }
+    .curve {
+      position: absolute;
+      height: 225px;
+      width: 100%;
+      bottom: 0;
+    }
+    .curve::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 55%;
+      height: 100%;
+      background-color: #202731;
+      transform: translate(85%, 60%);
+    }
+    .curve::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 55%;
+      height: 100%;
+      background-color: blue;
+      transform: translate(-4%, 40%);
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-  <section>
+  <section class="blue">
     <h1>Nice Curves</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique vel itaque excepturi magnam voluptates vero eligendi officiis asperiores, quos odio, labore odit deleniti laudantium! Deserunt adipisci iure sunt explicabo!</p>
+    <div class="curve"></div>
   </section>
-  <section>
+  <section class="bubble">
     <h1>Nice Curves</h1>
     <p>Excepturi voluptatem quis necessitatibus, animi odit eligendi placeat repudiandae illo est ratione iste nam et suscipit debitis, corrupti sit error. Maiores nemo quas ut autem natus ratione, iusto suscipit omnis?</p>
   </section>
-  <section>
+  <section class="dark">
     <h1>Nice Curves</h1>
     <p>Autem repudiandae facilis saepe. Delectus animi ab fugit! Eligendi reiciendis fugit veritatis consequatur labore quos consequuntur, temporibus laboriosam ab, autem dolor quam esse obcaecati! Excepturi magnam iure sed et vel.</p>
   </section>
