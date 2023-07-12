@@ -30,7 +30,7 @@
       background: #ff0000;
     }
     .pink {
-      background: pink;
+      background: #ff8297;
     }
     .curve {
       position: absolute;
@@ -103,7 +103,15 @@
     }
 
     .layer1 {
-      background-image: url('./layered-waves-haikei\ \(1\).svg');
+      background-image: url('./layered-waves-haikei.svg');
+    }
+
+    .flip {
+      transform: rotate(180deg);
+    }
+
+    .layer2 {
+      background-image: url('./layerpink.svg');
     }
   </style>
 </head>
@@ -132,14 +140,17 @@
     
   </div>
   </section>
+  <div class="spacer layer1 flip"></div>
   <section>
     <h1>Nice Curves</h1>
     <p>Dignissimos voluptatibus cumque sunt reiciendis omnis. Velit id eligendi ab, explicabo qui a est illo doloribus dolores nemo natus repellendus quae error quo perferendis iusto sunt itaque quia quisquam! Odit.</p>
   </section>
-  <section>
+  <div class="spacer layer2"></div>
+  <section class="pink">
     <h1>Nice Curves</h1>
     <p>Adipisci obcaecati magni in ipsam aperiam harum totam porro repellat? Deleniti quaerat quam officia facere, quasi ipsa alias ex, laborum hic autem facilis, sunt veniam. Fuga tempora nesciunt veniam debitis.</p>
   </section>
+  <div class="spacer layer2 flip"></div>
   <section>
     <h1>Nice Curves</h1>
     <p>Molestias ducimus rerum possimus laborum quia molestiae suscipit, incidunt libero aliquid, accusamus eum, eligendi repudiandae? Doloribus natus ut esse excepturi voluptatibus, neque eligendi nam quos possimus ipsum. Accusantium, perferendis officia.</p>
